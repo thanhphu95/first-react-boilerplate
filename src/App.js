@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
-import MainContainer from './containers/MainContainer';
+import Routes from './Routes';
+import { BrowserRouter as Router } from 'react-router-dom';
 function App() {
-  return (
-   <MainContainer/>
-  );
+    return (
+        <Router>
+            <Routes />
+        </Router>
+    );
 }
 
 export default App;
